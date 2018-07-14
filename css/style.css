@@ -1,0 +1,189 @@
+h1{
+    font-size: 32px;
+    margin: 5vh;
+}
+
+h2{
+    font-size: 24px;
+    text-align: center;
+    margin: 1em;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: bold;
+}
+
+#hero{
+    width: 100%;
+    height: 99vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    text-shadow: 0px 0px 16px rgb(75, 204, 77);
+}
+
+#hero > p {
+    margin-bottom: 5vh;
+    
+}
+
+button{
+    background-color: rgba(153, 135, 121, .5);
+    border: solid rgb(255, 214, 174);
+    padding: 1em;
+    color: white;
+    box-shadow: 1px 1px 15px white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgba(75, 204, 77, .8);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: none;
+}
+
+.grid {
+    display: grid;
+}
+
+#testimonials-div {
+    padding-bottom: 5vh;
+}
+
+#testimonials-div > .grid{
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    border: dashed 2px grey;
+    border-radius: 5px;
+    background: rgba(211, 211, 211, 0.5);
+}
+
+.testimonial > p{
+    padding: 1em;
+    font-style: italic;
+}
+
+.person {
+    padding-bottom: 1em;
+}
+
+.person > img{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+#blurbs{
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(109, 153, 135);
+}
+
+.card {
+    height: 70vh;
+    background-color: white;
+    margin: 5vh 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-apart;
+    box-shadow: 1px 1px 3px black;
+
+}
+
+.card-content > p {
+    padding: 1em;
+    line-height: 20px;
+}
+
+.card-content > h3 {
+    padding-top: 1em;
+}
+
+.card > img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+#more-info {
+    padding-bottom: 5vh;
+}
+
+#blocks{
+    text-align: center;
+    line-height: 50px;
+}
+
+.block{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block > h2 {
+    font-size: 30px;
+}
+
+#contact {
+    background-color: rgba(255, 214, 174, 0.863);
+}
+
+#about{
+    background-color: rgba(72, 197, 120, 0.842);      
+}
+
+#footer{
+    padding: 2vh;
+    line-height: 1em;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+@media (min-width: 540px){
+    #testimonials-div {
+        padding-bottom: 5vh;
+        padding-left: 1vh;
+        padding-right: 1vh;
+    }
+    
+    #testimonials-div > .grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    #blurbs{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        background-color: rgb(109, 153, 135);
+    }
+
+    #blocks{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
